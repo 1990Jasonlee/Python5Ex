@@ -5,4 +5,10 @@ def is_palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    lowercase = value.lower()
+    word = lowercase.replace(' ', '')
+    if word[::-1] == word:
+        return True
+    else:
+        return False
+
