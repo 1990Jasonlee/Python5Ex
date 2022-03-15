@@ -42,7 +42,7 @@ def gen_list_of_nums(n: int) -> List[int]:
     :param n: The number of items the result should contain
     :return: A list of integers
     """
-    pass  # remove pass statement and implement me
+    return list(range(0, n))
 
 
 def half_list(list_in: List, half: int) -> List:
@@ -54,7 +54,13 @@ def half_list(list_in: List, half: int) -> List:
     If the length of list_in is an odd number, round the half value up (hint: math.ceil()).
     :return: A list.
     """
-    pass  # remove pass statement and implement me
+    import math
+    i = math.ceil(len(list_in) / 2)
+    if half == 1:
+        list_out = list_in[:i]
+    else:
+        list_out = list_in[-i:]
+    return list_out
 
 
 def remove_odds(list_in: List[int]) -> None:
