@@ -1,4 +1,4 @@
-import math
+from math import ceil
 from typing import List
 
 
@@ -55,7 +55,7 @@ def half_list(list_in: List, half: int) -> List:
     :return: A list.
     """
 
-    i = math.ceil(len(list_in) / 2)
+    i = ceil(len(list_in) / 2)
     if half == 1:
         list_out = list_in[:i]
     else:
