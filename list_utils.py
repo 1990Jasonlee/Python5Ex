@@ -1,5 +1,5 @@
+import math
 from typing import List
-from math import ceil
 
 
 def get_item_at_position(list_in: List, pos: int) -> List:
@@ -54,7 +54,7 @@ def half_list(list_in: List, half: int) -> List:
     If the length of list_in is an odd number, round the half value up (hint: math.ceil()).
     :return: A list.
     """
-    import math
+
     i = math.ceil(len(list_in) / 2)
     if half == 1:
         list_out = list_in[:i]
